@@ -1,9 +1,26 @@
 Minetest-Faithful texture pack
 ------------------------------
 
-Copyright © 2013 Zeg9, Evergreen, released under the terms of the CC BY-SA 3.0.
+Copyright © 2013 Zeg9, Evergreen; released under the terms of the CC BY-SA 3.0.
 See https://creativecommons.org/licenses/by-sa/3.0/ for more information about that license.
 
 This texture pack provides 32x32px textures similar to the default textures from minetest.
 This is a Work-In-Progress (WIP), feel free to fork+pull-request if you want to make changes or add textures.
+
+Current support:
+- A few of minetest_game mods
+Planned support for mods:
+- The rest of minetest_game
+- Evergreen's mods
+- Zeg9's mods
+- 3darmor mod
+- TNT and nuke mod
+- Nether, carts, boats
+- Homedecor
+- Glooptest
+- Moreblocks and moreores
+- Technic (maybe not, it already has 32px textures)
+- Mesecons (if it really looks better in 32px)
+If you're a mod author, you may also make your own textures and submit them (pull-requests will be accepted faster than PMs or other).
+You can also ask us to add support for the mods you like, but notice that our todo list is bigger than what is currently done ;-)
 
