@@ -6,12 +6,31 @@ body {
 	margin: auto;
 	padding: 10px;
 	background-image: url(background_container.png);
+	border: 1px solid #fff;
+	border-radius: 50px;
+}
+#banner {
+	width: 576px;
+	height: 96px;
+	padding: 2px;
+	border: 1px solid #444;
+	border-radius: 50%;
+	margin:auto;
+	margin-bottom: 10px;
+	background-image: url(background_content.png);
 }
 #content {
 	width: 948px;
 	margin: auto;
 	padding: 24px;
+	padding-top: 1px;
+	border: 1px solid #444;
+	border-radius: 50px;
 	background-image: url(background_content.png);
+}
+#content h1 {
+	font-family: monospace;
+	font-size: 24pt;
 }
 #content a {
 	color: #44B;
@@ -19,14 +38,6 @@ body {
 }
 #content a:hover {
 	text-decoration: underline;
-}
-#banner {
-	width: 576px;
-	height: 96px;
-	padding: 2px;
-	margin:auto;
-	margin-bottom: 10px;
-	background-image: url(background_content.png);
 }
 #content p {
 	font-family: sans;
@@ -37,6 +48,7 @@ body {
 	font-size: 10pt;
 	background-color: rgba(255,255,255,.33);
 	padding: 5px;
+	border-radius: 10px;
 }
 #content pre.cmd:before {
 	content: "$ ";
