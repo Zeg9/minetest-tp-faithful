@@ -19,11 +19,44 @@ body {
 	margin-bottom: 10px;
 	background-image: url(background_content.png);
 }
+#menu {
+	width:auto;
+	margin: auto;
+	height: 32px;
+	padding: 0;
+	text-align: center;
+}
+#menu a, #menu span {
+	display: inline-block;
+	height: 12px;
+	padding: 10px;
+	font-size: 12px;
+	border-left: 1px solid #444;
+	border-top: 1px solid #444;
+	background-image: url(background_content.png);
+}
+#menu span {
+	color: #444;
+	background-color: rgba(255,255,255,.25);
+}
+#menu a {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 1px solid #444;
+	background-image: url(background_menu_dark.png);
+}
+#menu a:hover {
+	background-image: url(background_content.png);
+}
+#menu a.last, #menu span.last {
+	border-right: 1px solid #444;
+}
 #content {
-	width: 948px;
+	width: auto;
 	margin: auto;
 	padding: 24px;
-	padding-top: 1px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	border: 1px solid #444;
 	border-radius: 50px;
 	background-image: url(background_content.png);
@@ -43,13 +76,13 @@ body {
 	font-family: sans;
 	font-size: 12pt;
 }
-#content pre.cmd {
+#content p.cmd {
 	font-family: monospace;
 	font-size: 10pt;
 	background-color: rgba(255,255,255,.33);
 	padding: 5px;
 	border-radius: 10px;
 }
-#content pre.cmd:before {
+#content p.cmd span.line:before {
 	content: "$ ";
 }
