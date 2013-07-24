@@ -108,20 +108,23 @@ body {
 	background-color: rgba(0,0,0,.5);
 }
 #lightbox {
-	width: 800px;
-	height: 624px;
+	width: 0px; /* 800x624 - done with JS for animation */
+	height: 0px;
+	transition-duration: 0.5s;
+	overflow: hidden;
 	margin: auto;
 	margin-top: 5%;
 	border: 2px solid black;
 	border-radius: 5px;
-	padding: 10px;
 	background-color: #fff;
 }
 #lightbox img {
-	border-radius: 2px;
+	border-bottom: 1px solid black;
 }
 #lightbox p {
 	font-family: sans;
-	padding: 4px;
+	padding-top: 1px;
+	padding-left: 5px;
+	font-size: 12px;
 	margin: 0;
 }

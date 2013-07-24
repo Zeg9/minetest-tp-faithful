@@ -5,7 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="icon" type="image/png" href="icon.png" />
 	<script type="text/javascript">
+		var lightboxWidth = "800px";
+		var lightboxHeight = "624px";
 		function show_lightbox(img, legend) {
+			document.getElementById("lightbox_container").style.display = "block";
+			
 			var lightbox = document.getElementById("lightbox");
 			var imgel = document.createElement("img");
 			imgel.src = img;
@@ -13,16 +17,24 @@
 			var legendel = document.createElement("p");
 			legendel.innerHTML = legend;
 			lightbox.appendChild(legendel);
-			
-			document.getElementById("lightbox_container").style.display = "block";
+			window.setTimeout(function(){
+				lightbox.style.width = lightboxWidth;
+				lightbox.style.height = lightboxHeight;
+			}, 100);
 		}
 		function hide_lightbox() {
-			document.getElementById("lightbox_container").style.display = "none";
-			// clear the lightbox
-			var lightbox = document.getElementById("lightbox");
-			while (lightbox.hasChildNodes()) {
-				lightbox.removeChild(lightbox.lastChild);
-			}
+			// animate
+			lightbox.style.width = 0;
+			lightbox.style.height = 0;
+			
+			window.setTimeout(function(){
+				document.getElementById("lightbox_container").style.display = "none"
+				// clear the lightbox
+				var lightbox = document.getElementById("lightbox");
+				while (lightbox.hasChildNodes()) {
+					lightbox.removeChild(lightbox.lastChild);
+				}
+			}, 500);
 		}
 		function body_onload() {
 			var elements = document.getElementsByTagName("p");
