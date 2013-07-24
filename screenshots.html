@@ -4,8 +4,36 @@
 	<title>MT-Faithful</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="icon" type="image/png" href="icon.png" />
+	<script>
+		function show_lightbox(img) {
+			document.getElementById("lightbox_image").src = img;
+			document.getElementById("lightbox_container").style.display = "block";
+		}
+		function hide_lightbox() {
+			document.getElementById("lightbox_container").style.display = "none";
+		}
+		function body_onload() {
+			var elements = document.getElementsByTagName("p");
+			for (i = 0; i < elements.length; i++) {
+				if (elements[i].className == "screenshots") {
+					var links = elements[i].getElementsByTagName("a");
+					for (j = 0; j < links.length; j++) {
+						links[j].onclick = function() {
+							show_lightbox(this.href);
+							return false;
+						};
+					}
+				}
+			}
+		}
+	</script>
 </head>
-<body>
+<body onload="body_onload()">
+	<div id="lightbox_container" onclick="hide_lightbox()">
+		<div id="lightbox">
+			<img id="lightbox_image" />
+		</div>
+	</div>
 	<div id="container">
 		<div id="banner">
 			<img src="banner.png" alt="MT-Faithful - a texture pack by Zeg9 and Evergreen"/>
@@ -15,10 +43,14 @@
 		</div>
 		<div id="content">
 			<p>Some trees:</p>
-			<p><img src="screenshot-trees_1.png" alt="Screenshot: Trees #1"></p>
+			<p class="screenshots">
+				<a href="screenshots/trees_1.png"><img src="screenshots/thumbs/trees_1.png" alt="Screenshot: Trees #1"></a>
+			</p>
 			<p>Some caves and ores:</p>
-			<p><img src="screenshot-cave_1.png" alt="Screenshot: Cave #1"></p>
-			<p><img src="screenshot-cave_2.png" alt="Screenshot: Cave #2"></p>
+			<p class="screenshots">
+				<a href="screenshots/cave_1.png"><img src="screenshots/thumbs/cave_1.png" alt="Screenshot: Cave #1"></a>
+				<a href="screenshots/cave_2.png"><img src="screenshots/thumbs/cave_2.png" alt="Screenshot: Cave #2"></a>
+			</p>
 		</div>
 	</div>
 </body>

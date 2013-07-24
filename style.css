@@ -1,9 +1,12 @@
 body {
 	background-image: url(background_body.png);
+	margin:0;
+	padding:0;
 }
 #container {
-	width: 1000px;
+	width: 1024px;
 	margin: auto;
+	margin-top: 24px;
 	padding: 10px;
 	background-image: url(background_container.png);
 	border-radius: 10px;
@@ -75,4 +78,40 @@ body {
 }
 #content p.cmd span.line:before {
 	content: "$ ";
+}
+#content p.screenshots a {
+	border: 2px solid #444;
+	padding: 0;
+	width: 320px;
+	height: 240px;
+	display:inline-block;
+	border-radius: 4px;
+}
+#content p.screenshots a:hover {
+	border-color: #666;
+}
+#lightbox_container {
+	position: fixed;
+	display: none; /* toggled with javascript */
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+}
+#lightbox {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	margin-top: 5%;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #fff;
+}
+#lightbox_image {
+	border-radius: 2px;
 }
