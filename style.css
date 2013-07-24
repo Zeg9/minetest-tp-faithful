@@ -75,9 +75,10 @@ body {
 #content p.cmd {
 	font-family: monospace;
 	font-size: 10pt;
-	background-color: rgba(255,255,255,.33);
+	background-color: #C0C0C0;
+	border: 1px solid #444;
 	padding: 5px;
-	border-radius: 10px;
+	border-radius: 6px;
 }
 #content p.cmd span.line:before {
 	content: "$ ";
@@ -108,7 +109,7 @@ body {
 }
 #lightbox {
 	width: 800px;
-	height: 600px;
+	height: 624px;
 	margin: auto;
 	margin-top: 5%;
 	border: 2px solid black;
@@ -118,4 +119,9 @@ body {
 }
 #lightbox img {
 	border-radius: 2px;
+}
+#lightbox p {
+	font-family: sans;
+	padding: 4px;
+	margin: 0;
 }

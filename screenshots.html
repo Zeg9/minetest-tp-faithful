@@ -5,11 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="icon" type="image/png" href="icon.png" />
 	<script type="text/javascript">
-		function show_lightbox(img) {
+		function show_lightbox(img, legend) {
 			var lightbox = document.getElementById("lightbox");
 			var imgel = document.createElement("img");
 			imgel.src = img;
 			lightbox.appendChild(imgel);
+			var legendel = document.createElement("p");
+			legendel.innerHTML = legend;
+			lightbox.appendChild(legendel);
 			
 			document.getElementById("lightbox_container").style.display = "block";
 		}
@@ -28,7 +31,7 @@
 					var links = elements[i].getElementsByTagName("a");
 					for (j = 0; j < links.length; j++) {
 						links[j].onclick = function() {
-							show_lightbox(this.href);
+							show_lightbox(this.href, this.title);
 							return false;
 						};
 					}
@@ -50,14 +53,25 @@
 			<a href="index.html">Home</a><span>Screenshots</span><a href="download.html">Download</a>
 		</div>
 		<div id="content">
-			<p>Some trees:</p>
 			<p class="screenshots">
-				<a href="screenshots/trees_1.png"><img src="screenshots/thumbs/trees_1.png" alt="Screenshot: Trees #1"></a>
-			</p>
-			<p>Some caves and ores:</p>
-			<p class="screenshots">
-				<a href="screenshots/cave_1.png"><img src="screenshots/thumbs/cave_1.png" alt="Screenshot: Cave #1"></a>
-				<a href="screenshots/cave_2.png"><img src="screenshots/thumbs/cave_2.png" alt="Screenshot: Cave #2"></a>
+				<a href="screenshots/trees_1.png" title="Some trees.">
+					<img src="screenshots/thumbs/trees_1.png" alt="Some trees."/>
+				</a>
+				<a href="screenshots/jungle_1.png" title="I'm lost in that jungle...">
+					<img src="screenshots/thumbs/jungle_1.png" alt="I'm lost in that jungle..."/>
+				</a>
+				<a href="screenshots/cave_entry.png" title="Let's go mining.">
+					<img src="screenshots/thumbs/cave_entry.png" alt="Let's go mining !"/>
+				</a>
+				<a href="screenshots/cave_1.png" title="A cavern with some iron ore.">
+					<img src="screenshots/thumbs/cave_1.png" alt="A cavern with some iron ore."/>
+				</a>
+				<a href="screenshots/cave_2.png" title="Diamonds !">
+					<img src="screenshots/thumbs/cave_2.png" alt="Diamonds !"/>
+				</a>
+				<a href="screenshots/dungeon_entry.png" title="Fig.1: a dungeon entry in a desert.">
+					<img src="screenshots/thumbs/dungeon_entry.png" alt="Fig.1: a dungeon entry in a desert."/>
+				</a>
 			</p>
 		</div>
 	</div>
