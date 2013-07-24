@@ -4,13 +4,22 @@
 	<title>MT-Faithful</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="icon" type="image/png" href="icon.png" />
-	<script>
+	<script type="text/javascript">
 		function show_lightbox(img) {
-			document.getElementById("lightbox_image").src = img;
+			var lightbox = document.getElementById("lightbox");
+			var imgel = document.createElement("img");
+			imgel.src = img;
+			lightbox.appendChild(imgel);
+			
 			document.getElementById("lightbox_container").style.display = "block";
 		}
 		function hide_lightbox() {
 			document.getElementById("lightbox_container").style.display = "none";
+			// clear the lightbox
+			var lightbox = document.getElementById("lightbox");
+			while (lightbox.hasChildNodes()) {
+				lightbox.removeChild(lightbox.lastChild);
+			}
 		}
 		function body_onload() {
 			var elements = document.getElementsByTagName("p");
@@ -31,7 +40,6 @@
 <body onload="body_onload()">
 	<div id="lightbox_container" onclick="hide_lightbox()">
 		<div id="lightbox">
-			<img id="lightbox_image" />
 		</div>
 	</div>
 	<div id="container">
