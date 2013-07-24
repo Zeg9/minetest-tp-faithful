@@ -69,6 +69,9 @@ body {
 	font-family: sans;
 	font-size: 12pt;
 }
+#content img {
+	vertical-align: middle;
+}
 #content p.cmd {
 	font-family: monospace;
 	font-size: 10pt;
