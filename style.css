@@ -32,6 +32,8 @@ body {
 	display: inline-block;
 	height: 12px;
 	padding: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
 	font-size: 12px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
