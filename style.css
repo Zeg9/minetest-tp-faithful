@@ -6,8 +6,7 @@ body {
 	margin: auto;
 	padding: 10px;
 	background-image: url(background_container.png);
-	border: 1px solid #fff;
-	border-radius: 50px;
+	border-radius: 10px;
 }
 #banner {
 	width: 576px;
@@ -31,25 +30,17 @@ body {
 	height: 12px;
 	padding: 10px;
 	font-size: 12px;
-	border-left: 1px solid #444;
-	border-top: 1px solid #444;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	background-image: url(background_content.png);
-}
-#menu span {
 	color: #444;
-	background-color: rgba(255,255,255,.25);
 }
 #menu a {
-	color: #444;
 	text-decoration: none;
-	border-bottom: 1px solid #444;
 	background-image: url(background_menu_dark.png);
 }
 #menu a:hover {
-	background-image: url(background_content.png);
-}
-#menu a.last, #menu span.last {
-	border-right: 1px solid #444;
+	background-image: url(background_menu_hover.png);
 }
 #content {
 	width: auto;
@@ -57,8 +48,7 @@ body {
 	padding: 24px;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	border: 1px solid #444;
-	border-radius: 50px;
+	border-radius: 10px;
 	background-image: url(background_content.png);
 }
 #content h1 {
