@@ -7,7 +7,7 @@ See https://creativecommons.org/licenses/by-sa/3.0/ for more information about t
 Contributed textures:
   Mossmanikin (WTFPL):
   - default_gravel.png
-  - alternate 1 default_nc_rb
+  - alt1/default_nc_rb.png
 
 This texture pack provides 32x32px textures similar to the default textures from minetest.
 This is a Work-In-Progress (WIP), feel free to fork+pull-request if you want to make changes or add textures.
