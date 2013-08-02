@@ -1,0 +1,3 @@
+This texture pack provides
+32x32 textures that are
+faithful to the default ones.
