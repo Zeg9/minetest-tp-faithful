@@ -13,9 +13,15 @@ This texture pack provides 32x32px textures similar to the default textures from
 This is a Work-In-Progress (WIP), feel free to fork+pull-request if you want to make changes or add textures.
 
 Current support:
-- A few of minetest_game mods
+- All minetest_game mods
+- A few of BlockMen's mods
+- One of Evergreen's mods
+- One of Zeg9's mods
+- The nether mod
+- TNT mod
+- Some of the moreblocks textures
+- Some of the glooptest textures
 Planned support for mods:
-- The rest of minetest_game
 - Evergreen's mods
 - Zeg9's mods
 - 3darmor mod
