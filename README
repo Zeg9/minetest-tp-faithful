@@ -8,6 +8,12 @@ Contributed textures:
   Mossmanikin (WTFPL):
   - default_gravel.png
   - alt1/default_nc_rb.png
+  
+  philipbenr (WTFPL):
+  - unknown_item.png
+  - unknown_node.png 
+  - default_wood.png
+  - default_junglewood.png
 
 This texture pack provides 32x32px textures similar to the default textures from minetest.
 This is a Work-In-Progress (WIP), feel free to fork+pull-request if you want to make changes or add textures.
